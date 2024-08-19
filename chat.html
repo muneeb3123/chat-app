@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="chat.css">
+    <script defer src="http://localhost:3000/socket.io/socket.io.js"></script>
+    <script defer src="client.js"></script>
+    <title>Chat Application</title>
+</head>
+<body>
+    <nav class="flex">
+        <i class="fa-brands fa-whatsapp" style="color: #63E6BE;"></i>
+        <p>Welcome to Chat App</p>
+    </nav>
+    <div class="chat-ui">
+    <div class="all-users"></div>
+    <div class="display">
+    <div class="container flex">
+    </div>
+
+    <form id="send-container" class="flex" action="#">
+        <textarea id="input-text" placeholder="Type a message" ></textarea>
+        <button><i class="fa-solid fa-paper-plane"></i></button>
+    </form>
+</div>
+    </div>
+</body>
+</html>
